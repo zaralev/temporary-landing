@@ -1,0 +1,169 @@
+@import "fonts";
+@import "reset";
+@import "anim";
+$heading: 'Duera',Helvetica, sans-serif;
+$body: Helvetica, sans-serif;
+$accent: Georgia, serif;
+$color: #3c1f8e;
+$background: #7d7d7d;
+$op: 0.7;
+$transition: 0.7s all ease-out;
+body {
+    animation: colorchange 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -webkit-animation: colorchange 7s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    font-size: 20px;
+    color: #fff;
+    transition: $transition;
+    @media screen and (min-width:768px) {
+        font-size: 40px;
+    }
+}
+h1 {
+    font-family: $heading;
+    color: #fff;
+    font-size: 40px;
+    transition: $transition;
+    letter-spacing: 0.1em;
+    @media screen and (min-width:768px) {
+        font-size: 55px;
+    }
+}
+#social {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 5;
+    color: #fff;
+    width: 200px;
+    mix-blend-mode: screen;
+    ul {
+        list-style-type: none;
+        float: right;
+            mix-blend-mode: screen;
+        li {
+            display: inline-block;
+                mix-blend-mode: screen;
+            img {
+                max-width: 50px;
+                &:hover,&:active {
+                  transform: scale(1.2);
+                  -webkit-transform:scale(1.2);
+                }
+            }
+        }
+    }
+}
+#border-top {
+    background-color: #73de17;
+    height: 2vh;
+    position: fixed;
+    top: 2vh;
+    left: 0;
+    width: 100%;
+    mix-blend-mode: hard-light;
+    opacity: $op;
+}
+#border-top-2 {
+    background-color: #faea16;
+    height: 2vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    mix-blend-mode: hard-light;
+    opacity: $op;
+}
+#border-bottom {
+    background-color: #ec1ca5;
+    height: 2vh;
+    position: fixed;
+    bottom: 2vh;
+    left: 0;
+    width: 100%;
+    mix-blend-mode: hard-light;
+    opacity: $op;
+}
+#border-bottom-2 {
+    background-color: #b328ec;
+    height: 2vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    mix-blend-mode: hard-light;
+    opacity: $op;
+}
+#border-left {
+    background-color: #e71832;
+    width: 2vh;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 2vh;
+    mix-blend-mode: hard-light;
+    opacity: $op;
+}
+#border-left-2 {
+    background-color: #f07319;
+    width: 2vh;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    mix-blend-mode: hard-light;
+    opacity: $op;
+}
+#border-right {
+    background-color: #188ae7;
+    width: 2vh;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 2vh;
+    mix-blend-mode: hard-light;
+    opacity: $op;
+}
+#border-right-2 {
+    background-color: #732df4;
+    width: 2vh;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    mix-blend-mode: hard-light;
+    opacity: $op;
+}
+#small {
+    font-size: 13px;
+    font-family: $body;
+    transition: $transition;
+    @media screen and (min-width:768px) {
+        font-size: 18px;
+    }
+}
+#back {
+    font-family: $accent;
+    font-style: italic;
+    float: right;
+}
+#message {
+    position: relative;
+    top: 30vh;
+    text-align: center;
+    padding: 1em;
+    width:50%;
+    margin: auto;
+    @media screen and (min-width:768px) {
+        width: 60%;
+    }
+    @media screen and (min-width:1024px) {
+        width: 50%;
+    }
+    @media screen and (min-width:1280px) {
+        width: 40%;
+    }
+}

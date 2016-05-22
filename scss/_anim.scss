@@ -1,0 +1,28 @@
+@keyframes colorchange {
+    0% {
+        background: #163266; //blue
+    }
+    33% {
+        background:#3c1f8e; //indigo
+    }
+    66% {
+        background:#671f8e; //indigo
+    }
+    100% {
+        background: #163266; //indigo
+    }
+}
+@-webkit-keyframes colorchange {
+  0% {
+      background: #163266; //blue
+  }
+  33% {
+      background:#3c1f8e; //indigo
+  }
+  66% {
+      background:#671f8e; //indigo
+  }
+  100% {
+      background: #163266; //indigo
+  }
+}
